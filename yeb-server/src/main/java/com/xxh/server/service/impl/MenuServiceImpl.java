@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxh.server.mapper.MenuMapper;
 import com.xxh.server.pojo.Admin;
 import com.xxh.server.pojo.Menu;
+import com.xxh.server.pojo.Role;
 import com.xxh.server.service.IMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -48,5 +49,14 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements IM
             valueOperations.set("menu"+adminId,menus);
         }
         return menus;
+    }
+
+    /**
+     * 通过角色列表查询菜单列表
+     * @return
+     */
+    @Override
+    public List<Menu> getMenusWithRole() {
+        return menuMapper.getMenusWithRole();
     }
 }

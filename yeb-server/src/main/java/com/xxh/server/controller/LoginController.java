@@ -41,6 +41,7 @@ public class LoginController {
         String userName = principal.getName();
         Admin admin=adminService.getAdminByUserName(userName);
         admin.setPassword(null);//出于安全
+        admin.setRoles(adminService.getRoles(admin.getId()));
         return admin;
     }
 

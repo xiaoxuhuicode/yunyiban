@@ -2,6 +2,7 @@ package com.xxh.server.service;
 
 import  com.xxh.server.pojo.Menu;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xxh.server.pojo.Role;
 
 import java.util.List;
 
@@ -20,4 +21,11 @@ public interface IMenuService extends IService<Menu> {
      * @return
      */
     List<Menu> getMenusByAdminId();
+
+    /**
+     * 通过角色列表查询菜单列表
+     * @return
+     */
+    List<Menu> getMenusWithRole();
+
 }
