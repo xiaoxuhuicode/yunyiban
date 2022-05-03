@@ -23,6 +23,16 @@
         id, name, parentId, depPath, enabled, isParent
     </sql>
 
+    <!--删除部门-->
+    <select id="deleteDepartment" statementType="CALLABLE">
+        call deleteDep(#{id,mode=IN,jdbcType=INTEGER},#{result,mode=OUT,jdbcType=INTEGER})
+    </select>
+
+    <!--添加部门-->
+    <select id="addDepartment" statementType="CALLABLE">
+        call addDep(#{name,mode=IN,jdbcType=VARCHAR},#{parentId,mode=IN,jdbcType=INTEGER},#{enabled,mode=IN,jdbcType=BOOLEAN},#{result,mode=OUT,jdbcType=INTEGER},#{id,mode=OUT,jdbcType=INTEGER})
+    </select>
+
     <!--获取所有部门-->
     <select id="getAllDepartments" resultMap="DepartmentWithChildren">
         select
