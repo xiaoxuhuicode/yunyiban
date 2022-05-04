@@ -94,7 +94,6 @@ public class MailReceiver {
             try {
                 channel.basicNack(tag, false, true);
             } catch (IOException ioException) {
-                //ioException.printStackTrace();
                 logger.error("消息确认失败=====>{}", ioException.getMessage());
             }
             logger.error("MailReceiver + 邮件发送失败========{}", e.getMessage());

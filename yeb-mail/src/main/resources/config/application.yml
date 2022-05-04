@@ -17,7 +17,7 @@ spring:
     port: 5672
     listener:
       simple:
-        acknowledge-mode: manual
+        acknowledge-mode: manual # 开启手动确认
   redis:
     timeout: 10000ms
     host: 127.0.0.1
