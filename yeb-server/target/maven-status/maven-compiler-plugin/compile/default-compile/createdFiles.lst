@@ -16,11 +16,13 @@ com\xxh\server\config\security\SecurityConfig.class
 com\xxh\server\pojo\AdminLoginParam.class
 com\xxh\server\service\IPoliticsStatusService.class
 com\xxh\server\controller\EmployeeTrainController.class
+com\xxh\server\exception\GlobalException.class
 com\xxh\server\service\impl\SysMsgContentServiceImpl.class
 com\xxh\server\service\IMailLogService.class
 com\xxh\server\controller\EmployeeRemoveController.class
 com\xxh\server\mapper\JoblevelMapper.class
 com\xxh\server\pojo\EmployeeEc.class
+com\xxh\server\utils\AdminUtils.class
 com\xxh\server\service\impl\EmployeeRemoveServiceImpl.class
 com\xxh\server\pojo\Menu.class
 com\xxh\server\controller\PoliticsStatusController.class
@@ -45,6 +47,7 @@ com\xxh\server\pojo\EmployeeTrain.class
 com\xxh\server\service\impl\JoblevelServiceImpl.class
 com\xxh\server\service\impl\SysMsgServiceImpl.class
 com\xxh\server\pojo\Appraise.class
+com\xxh\server\pojo\RespPageBean.class
 com\xxh\server\config\security\SecurityConfig$1.class
 com\xxh\server\mapper\MenuRoleMapper.class
 com\xxh\server\controller\HelloController.class
@@ -112,8 +115,10 @@ com\xxh\server\config\component\CustomUrlDecisionManager.class
 com\xxh\server\controller\MenuRoleController.class
 com\xxh\server\service\impl\MenuRoleServiceImpl.class
 com\xxh\server\pojo\Nation.class
+com\xxh\server\config\MyBatisPlusConfig.class
 com\xxh\server\controller\SysMsgContentController.class
 com\xxh\server\service\IJoblevelService.class
+com\xxh\server\converter\DateConverter.class
 com\xxh\server\pojo\Employee.class
 com\xxh\server\mapper\AdminRoleMapper.class
 com\xxh\server\controller\OplogController.class
