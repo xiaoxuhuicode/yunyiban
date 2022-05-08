@@ -8,6 +8,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\AdminControl
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\MenuRoleController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Menu.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\JoblevelMapper.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\task\MailTask.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\component\RestAuthorizationEntryPoint.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\AppraiseServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IOplogService.java
@@ -27,6 +28,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\RespPageBean.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IEmployeeTrainService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\NationController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\PoliticsStatusController.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\webSocket\WebSocketConfig.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\SalaryAdjust.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\EmployeeEcMapper.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\ISysMsgContentService.java
@@ -39,6 +41,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\Department
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\EmployeeMapper.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\AdminServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Nation.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\ChatController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\SalaryAdjustController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IRoleService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\utils\AdminUtils.java
@@ -86,6 +89,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\AdminLoginParam.ja
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\EmployeeTrainController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\component\RestfulAccessDeniedHandler.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\SysMsg.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\rabbitmq\RabbitMQConfig.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Salary.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\AdminRoleMapper.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\EmployeeEc.java
@@ -96,6 +100,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\PoliticsSt
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Position.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\CaptchaConfig.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\SysMsgController.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\WsController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IEmployeeService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\EmployeeEcServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Joblevel.java
@@ -115,9 +120,12 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\CaptchaContr
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\MyBatisPlusConfig.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IMailLogService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\SalaryAdjustMapper.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\MailConstants.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\SalarySobCfgController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\EmployeeRemove.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IAdminService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\component\CustomUrlDecisionManager.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\ChatMsg.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Role.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Admin.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\EmployeeRemoveController.java
