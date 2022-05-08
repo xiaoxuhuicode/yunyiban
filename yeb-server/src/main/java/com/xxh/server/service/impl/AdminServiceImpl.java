@@ -16,6 +16,7 @@ import com.xxh.server.utils.AdminUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -154,6 +155,28 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
                 return RespBean.success("更新成功！");
             }
         }
+        return RespBean.error("更新失败！");
+    }
+
+    /**
+     * 更新用户头像
+     * @param url
+     * @param id
+     * @param authentication
+     * @return
+     */
+    @Override
+    public RespBean updateAdminUserFace(String url, Integer id, Authentication authentication) {
+        Admin admin = adminMapper.selectById(id);
+        admin.setUserFace(url);
+        int result = adminMapper.updateById(admin);
+        if(1==result){
+            Admin principal = (Admin) authentication.getPrincipal();
+            principal.setUserFace(url);
+            SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(admin,null,authentication.getAuthorities()));
+            return RespBean.success("更新成功！",url);
+        }
+
         return RespBean.error("更新失败！");
     }
 }
