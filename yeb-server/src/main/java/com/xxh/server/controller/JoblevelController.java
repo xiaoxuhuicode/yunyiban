@@ -47,7 +47,7 @@ public class JoblevelController {
 
     @ApiOperation(value = "更新职称")
     @PutMapping("/")
-    public RespBean updateJobLevel(Joblevel joblevel){
+    public RespBean updateJobLevel(@RequestBody Joblevel joblevel){
         if(joblevelService.updateById(joblevel)){
             return RespBean.success("更新成功！");
         }
