@@ -1,6 +1,8 @@
 package com.xxh.server.converter;
 
-import org.springframework.core.convert.converter.Converter;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.type.TypeFactory;
+import com.fasterxml.jackson.databind.util.Converter;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -21,6 +23,16 @@ public class DateConverter implements Converter<String, LocalDate> {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
+    }
+
+    @Override
+    public JavaType getInputType(TypeFactory typeFactory) {
+        return null;
+    }
+
+    @Override
+    public JavaType getOutputType(TypeFactory typeFactory) {
         return null;
     }
 
