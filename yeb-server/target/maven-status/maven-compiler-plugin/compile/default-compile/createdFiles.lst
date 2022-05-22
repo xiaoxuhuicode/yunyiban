@@ -10,6 +10,7 @@ com\xxh\server\pojo\Admin.class
 com\xxh\server\service\impl\SalaryServiceImpl.class
 com\xxh\server\pojo\AdminRole.class
 com\xxh\server\pojo\Salary.class
+com\xxh\server\controller\AdminInfoController.class
 com\xxh\server\service\impl\EmployeeServiceImpl.class
 com\xxh\server\service\IDepartmentService.class
 com\xxh\server\config\security\SecurityConfig.class
@@ -81,6 +82,7 @@ com\xxh\server\service\impl\PoliticsStatusServiceImpl.class
 com\xxh\server\pojo\MenuRole.class
 com\xxh\server\config\component\JwtTokenUtil.class
 com\xxh\server\controller\MenuController.class
+com\xxh\server\utils\FastDFSUtils.class
 com\xxh\server\service\IAppraiseService.class
 com\xxh\server\service\INationService.class
 com\xxh\server\service\impl\SalaryAdjustServiceImpl.class
@@ -93,6 +95,7 @@ com\xxh\server\pojo\Joblevel.class
 com\xxh\server\mapper\RoleMapper.class
 com\xxh\server\controller\MailLogController.class
 com\xxh\server\mapper\MailLogMapper.class
+com\xxh\server\config\CustomAuthorityDeserializer.class
 com\xxh\server\controller\AdminRoleController.class
 com\xxh\server\mapper\AppraiseMapper.class
 com\xxh\server\pojo\SysMsg.class

@@ -44,7 +44,7 @@ public class DepartmentServiceImpl extends ServiceImpl<DepartmentMapper, Departm
         department.setEnabled(true);
         departmentMapper.addDepartment(department);
         if(1==department.getResult()){
-            return RespBean.success("添加成功！");
+            return RespBean.success("添加成功！",department);
         }
         return RespBean.error("添加失败！");
     }

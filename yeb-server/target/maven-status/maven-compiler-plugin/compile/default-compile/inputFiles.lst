@@ -37,6 +37,8 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\EmployeeRemoveMa
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Appraise.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IEmployeeRemoveService.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\EmployeeEcController.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\utils\FastDFSUtils.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\AdminInfoController.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\DepartmentServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\mapper\EmployeeMapper.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\AdminServiceImpl.java
@@ -77,6 +79,7 @@ D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\controller\PositionCont
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\pojo\Department.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\RoleServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\IJoblevelService.java
+D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\config\CustomAuthorityDeserializer.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\JoblevelServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\impl\SysMsgContentServiceImpl.java
 D:\code\yunyiban\yeb-server\src\main\java\com\xxh\server\service\ISysMsgService.java
